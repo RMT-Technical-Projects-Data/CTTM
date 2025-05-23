@@ -1,0 +1,106 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.41.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Ali Hassan, HP Inc., LIC=IC93N-Y8BK9-AWK2F-67P5Q-U7XGV-JVR1A
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.41.0.0
+Toolchain Path:  C:\Users\Revive\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.41.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\Revive\Desktop\RMT\CTTM\CTTM_Firmware_18032025\MDK-ARM\CTTM_18032025.uvprojx
+Project File Date:  03/27/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Users\Revive\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin'
+Build target 'CTTM_18032025'
+compiling main.c...
+../Core/Src/main.c(642): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(Dir_GPIO_Port, Dir_Pin, dir);
+../Core/Src/main.c(643): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(En_GPIO_Port, En_Pin, 1);
+../Core/Src/main.c(661): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c(668): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c(675): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c(680): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c(699): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(En_GPIO_Port, En_Pin, 0);
+../Core/Src/main.c(706): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(Heater_GPIO_Port, Heater_Pin, ctrl);
+../Core/Src/main.c(712): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(Air_Valve_GPIO_Port,Air_Valve_Pin, ctrl);
+../Core/Src/main.c(721): warning:  #188-D: enumerated type mixed with another type
+    HAL_GPIO_WritePin(NSS_GPIO_Port, NSS_Pin, 0);
+../Core/Src/main.c(727): warning:  #188-D: enumerated type mixed with another type
+    HAL_GPIO_WritePin(NSS_GPIO_Port, NSS_Pin, 1);
+../Core/Src/main.c(804): warning:  #177-D: variable "DECELERATION_TIME_MS"  was declared but never referenced
+      const int DECELERATION_TIME_MS = 200; // 200ms to stop the motor
+../Core/Src/main.c(841): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(Dir_GPIO_Port, Dir_Pin,0);
+../Core/Src/main.c(844): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port, Dir_Pin,1);
+../Core/Src/main.c(1061): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c(1067): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c(1075): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c(1080): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c(1114): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c(1121): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c(1128): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c(1133): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c: 22 warnings, 0 errors
+linking...
+Program Size: Code=24610 RO-data=814 RW-data=360 ZI-data=9440  
+FromELF: creating hex file...
+"CTTM_18032025\CTTM_18032025.axf" - 0 Error(s), 22 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil::STM32F4xx_DFP@2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_CTTM_18032025
+  C:/Users/Revive/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  C:/Users/Revive/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
