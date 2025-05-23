@@ -1,0 +1,5 @@
+ConfigName,Linear Speed,Distance,Temperature,PeakForce
+add,12,2,2,2
+qw,2,1,2,1
+CTTM,10,10,20,2
+RMT,10,30,20,3
