@@ -1,0 +1,154 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.41.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Ali Hassan, HP Inc., LIC=IC93N-Y8BK9-AWK2F-67P5Q-U7XGV-JVR1A
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.41.0.0
+Toolchain Path:  C:\Users\Revive\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.41.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\Revive\Documents\CTTMTEMPERATURE\CTTM_Firmware_18032025\MDK-ARM\CTTM_18032025.uvprojx
+Project File Date:  04/10/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Users\Revive\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin'
+Build target 'CTTM_18032025'
+compiling main.c...
+../Core/Src/main.c(244): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOE,GPIO_PIN_14,1);//simulating pressing a power button why i am releasing (gpio is zero) is because if hold for long pc will shut down
+../Core/Src/main.c(246): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOE,GPIO_PIN_14,0);
+../Core/Src/main.c(249): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOG,GPIO_PIN_11,0);
+../Core/Src/main.c(723): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(Dir_GPIO_Port, Dir_Pin, dir);
+../Core/Src/main.c(724): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(En_GPIO_Port, En_Pin, 1);
+../Core/Src/main.c(743): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c(750): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c(757): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c(762): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c(783): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(En_GPIO_Port, En_Pin, 0);
+../Core/Src/main.c(790): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(Heater_GPIO_Port, Heater_Pin, ctrl);
+../Core/Src/main.c(796): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(Air_Valve_GPIO_Port,Air_Valve_Pin, ctrl);
+../Core/Src/main.c(805): warning:  #188-D: enumerated type mixed with another type
+    HAL_GPIO_WritePin(NSS_GPIO_Port, NSS_Pin, 0);
+../Core/Src/main.c(811): warning:  #188-D: enumerated type mixed with another type
+    HAL_GPIO_WritePin(NSS_GPIO_Port, NSS_Pin, 1);
+../Core/Src/main.c(830): warning:  #188-D: enumerated type mixed with another type
+  	   HAL_GPIO_WritePin(GPIOG,GPIO_PIN_5,1);
+../Core/Src/main.c(834): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOG,GPIO_PIN_5,0);
+../Core/Src/main.c(906): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	measured_force = ((0.05*average)-136.5-3);
+../Core/Src/main.c(911): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	measured_force = ((0.05*average)-133.5-3.3-2.5);//default 2.8 changed to -4
+../Core/Src/main.c(912): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		if(measured_force>-0.1&&measured_force<0.1)
+../Core/Src/main.c(922): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	measured_force = ((0.05*average)-133.5-3.3);
+../Core/Src/main.c(932): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		measured_force = ((0.05*average)-133.5-3.3-2.5+3.1);
+../Core/Src/main.c(978): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		measured_force =((average-2719.13333)/19)-4.8;
+../Core/Src/main.c(985): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	measured_force = ((average-2719.13333)/19);
+../Core/Src/main.c(994): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				measured_force =((average-2719.13333)/19)-4.8-1.2;
+../Core/Src/main.c(998): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		measured_force =((average-2719.13333)/19)-0.53;
+../Core/Src/main.c(1054): warning:  #177-D: variable "DECELERATION_TIME_MS"  was declared but never referenced
+      const int DECELERATION_TIME_MS = 200; // 200ms to stop the motor
+../Core/Src/main.c(1091): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(Dir_GPIO_Port, Dir_Pin,0);
+../Core/Src/main.c(1094): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port, Dir_Pin,1);
+../Core/Src/main.c(1106): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(En_GPIO_Port, En_Pin, 0);
+../Core/Src/main.c(1116): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(En_GPIO_Port, En_Pin, 0);
+../Core/Src/main.c(1159): warning:  #188-D: enumerated type mixed with another type
+  	 if (strcmp(rxData, "*2:5:2#") == 0) {HAL_GPIO_WritePin(GPIOG,GPIO_PIN_11,0);}
+../Core/Src/main.c(1160): warning:  #188-D: enumerated type mixed with another type
+  	else if (strcmp(rxData, "*2:5:1#") == 0) {HAL_GPIO_WritePin(GPIOG,GPIO_PIN_11,1);}
+../Core/Src/main.c(1237): warning:  #188-D: enumerated type mixed with another type
+  		USBD_StatusTypeDef	transmitstatus = CDC_Transmit_HS((uint8_t*) pfeedback,strlen(pfeedback));
+../Core/Src/main.c(1243): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(En_GPIO_Port, En_Pin, 0);
+../Core/Src/main.c(1445): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c(1451): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c(1460): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c(1465): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c(1501): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c(1508): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c(1515): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c(1520): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(Dir_GPIO_Port,Dir_Pin,dir);
+../Core/Src/main.c(79): warning:  #177-D: variable "offset"  was declared but never referenced
+  static float offset;
+../Core/Src/main.c(80): warning:  #177-D: variable "offset_run"  was declared but never referenced
+  static float offset_run;
+../Core/Src/main.c(81): warning:  #177-D: variable "offset_hom"  was declared but never referenced
+  static float offset_hom;
+../Core/Src/main.c(83): warning:  #550-D: variable "calibrate"  was set but never used
+  static uint8_t calibrate;
+../Core/Src/main.c: 46 warnings, 0 errors
+linking...
+Program Size: Code=39756 RO-data=1084 RW-data=576 ZI-data=30040  
+FromELF: creating hex file...
+"CTTM_18032025\CTTM_18032025.axf" - 0 Error(s), 46 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil::STM32F4xx_DFP@2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_CTTM_18032025
+  C:/Users/Revive/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  C:/Users/Revive/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>

@@ -1,0 +1,12 @@
+cttm_18032025\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/list.c
+cttm_18032025\list.o: C:\Users\Revive\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdlib.h
+cttm_18032025\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+cttm_18032025\list.o: C:\Users\Revive\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
+cttm_18032025\list.o: C:\Users\Revive\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+cttm_18032025\list.o: ../Core/Inc/FreeRTOSConfig.h
+cttm_18032025\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+cttm_18032025\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+cttm_18032025\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+cttm_18032025\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+cttm_18032025\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+cttm_18032025\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
